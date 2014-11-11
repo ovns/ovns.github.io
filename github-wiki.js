@@ -1,5 +1,5 @@
 //The name of the page in github
-var github_page = "CHANGE THIS"
+var github_page = "ovns"
 
 
 //Find the title of the article to be shown
