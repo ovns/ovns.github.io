@@ -1,5 +1,5 @@
 Open value Networks
 ===================
 
-[Nondominium](/Nondominium)
+[[Nondominium]]
 

@@ -10,6 +10,13 @@ if (document.URL.match("=")) {
     title = "meta_index";
 }
 
+//transforms double brackets links into markdown links
+function link_converter(md) {
+    return md.replace(/\[\[(\w+)\]\]/g, function(match, p1, offset, string) {
+        return "[" + p1 + "](/" + p1 + ")";
+    });
+}
+
 //Initialize sanitizing converter.
 var converter = Markdown.getSanitizingConverter();
 
@@ -19,7 +26,8 @@ function load_article(title) {
     $.ajax({
         url: "wiki/" + title + ".md",
         success: function(data) {
-            var html = converter.makeHtml(data);
+            var lmd = link_converter(data);
+            var html = converter.makeHtml(lmd);
             $("#article").empty();
             $("#article").append(html);
 
