@@ -26,7 +26,7 @@ function load_article(title) {
     $.ajax({
         url: "wiki/" + title + ".md",
         success: function(data) {
-            var lmd = link_converter(data);
+            var lmd = link_converter("# "+title.replace(/_/g," ")+"\n\n"+data);
             console.log(lmd);
             var html = converter.makeHtml(lmd);
             $("#article").empty();
@@ -43,7 +43,7 @@ function load_article(title) {
 
         },
         error: function() {
-            load_article("meta_article_doesnt_exist");
+            load_article("Meta:404");
         }
     });
 
