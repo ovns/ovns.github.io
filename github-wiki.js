@@ -7,7 +7,7 @@ var title;
 if (document.URL.match("=")) {
     title = document.URL.split("=")[1];
 } else {
-    title = "meta_index";
+    title = "Open_Value_Networks";
 }
 
 //transforms double brackets links into markdown links
