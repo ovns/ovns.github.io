@@ -12,8 +12,8 @@ if (document.URL.match("=")) {
 
 //transforms double brackets links into markdown links
 function link_converter(md) {
-    return md.replace(/\[\[(\w+)\]\]/g, function(match, p1, offset, string) {
-        return "[" + p1 + "](/" + p1 + ")";
+    return md.replace(/\[\[([\w\s\-]+)\]\]/g, function(match, p1, offset, string) {
+        return "[" + p1 + "](/" + p1.replace(/\s/g, "_") + ")";
     });
 }
 
@@ -27,6 +27,7 @@ function load_article(title) {
         url: "wiki/" + title + ".md",
         success: function(data) {
             var lmd = link_converter(data);
+            console.log(lmd);
             var html = converter.makeHtml(lmd);
             $("#article").empty();
             $("#article").append(html);
