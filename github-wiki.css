@@ -10,6 +10,9 @@
         right: 0px;
         bottom: 20px;
     }
+    .pure-button {
+    width: 70%;
+    }
     .markdown-body {
         left: 0px;
         width: 80%;
