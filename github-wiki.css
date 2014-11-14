@@ -1,5 +1,5 @@
     #logo {
-        width: 10%;
+        width: 140px;
         position: fixed;
         left: 0px;
         top: 0px;
@@ -11,14 +11,18 @@
         bottom: 20px;
     }
     .pure-button {
-    width: 70%;
+        width: 70%;
+    }
+    #main {
+        position:absolute;
+        left:145px;
     }
     .markdown-body {
-        position:absolute;
-        left: 10%;
-        width: 88%;
         margin: 0;
         padding: 1%;
+    }
+    #empty_space {
+        height:200px;
     }
     .images {
         position:absolute;

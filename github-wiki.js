@@ -40,8 +40,7 @@ function load_article(title) {
             $("#article").append(html);
 
             //Extend the height a few pixels so that all images are shown.
-            var ah = $("#article").height();
-            $("#article").height(ah + 200);
+            var ah = $("#article").append("<div id='empty_space' </div>");
 
             //Catch all links and redirect them to the correct url if they are local.
             $("a").on("click", function(e) {
