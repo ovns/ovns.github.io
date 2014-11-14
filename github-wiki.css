@@ -1,21 +1,29 @@
     #logo {
-        width: 15%;
+        width: 10%;
         position: fixed;
-        right: 0px;
+        left: 0px;
         top: 0px;
     }
     #edit {
         padding: 0px;
         position: fixed;
-        right: 0px;
+        left: 0px;
         bottom: 20px;
     }
     .pure-button {
     width: 70%;
     }
     .markdown-body {
-        left: 0px;
-        width: 80%;
+        position:absolute;
+        left: 10%;
+        width: 88%;
         margin: 0;
-        padding: 30px;
+        padding: 1%;
     }
+    .images {
+        position:absolute;
+        right: 0%;
+        width: 15%;
+        margin: 0;
+        padding: 0;
+}

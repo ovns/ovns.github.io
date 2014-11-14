@@ -127,6 +127,7 @@
   margin-top: 15px;
   margin-bottom: 15px;
   line-height: 1.1;
+  width:85%;
 }
 
 .markdown-body h1 {
@@ -316,6 +317,7 @@
 .markdown-body pre {
   margin-top: 0;
   margin-bottom: 16px;
+  width:85%;
 }
 
 .markdown-body hr {

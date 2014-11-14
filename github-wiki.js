@@ -17,8 +17,15 @@ function link_converter(md) {
     });
 }
 
-//Initialize sanitizing converter.
-var converter = Markdown.getSanitizingConverter();
+//transforms ![image]! into markdown images
+function image_converter(md) {
+    return md.replace(/\!\[([\w\s._0-9\-]+)\]\!/g, function(match, p1, offset, string) {
+        return "<img src='/images/" + p1 + "' class='images' </img>";
+    });
+}
+
+//Initialize Converter.
+var converter = new Markdown.Converter();
 
 
 //Load Markdown document, convert it and add it to the DOM.
@@ -27,9 +34,14 @@ function load_article(title) {
         url: "wiki/" + title + ".md",
         success: function(data) {
             var lmd = link_converter("# " + title.replace(/_/g, " ") + "\n\n" + data);
+            lmd = image_converter(lmd);
             var html = converter.makeHtml(lmd);
             $("#article").empty();
             $("#article").append(html);
+
+            //Extend the height a few pixels so that all images are shown.
+            var ah = $("#article").height();
+            $("#article").height(ah + 200);
 
             //Catch all links and redirect them to the correct url if they are local.
             $("a").on("click", function(e) {
