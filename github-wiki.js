@@ -1,5 +1,5 @@
 //The name of the page in github
-var github_page = "ovns"
+var github_page = "ryaki-org"
 
 
 //Find the title of the article to be shown
@@ -7,7 +7,7 @@ var title;
 if (document.URL.match("=")) {
     title = document.URL.split("=")[1];
 } else {
-    title = "Open_Value_Networks";
+    title = "Ryaki";
 }
 
 //transforms double brackets links into markdown links
@@ -38,6 +38,9 @@ function load_article(title) {
             var html = converter.makeHtml(lmd);
             $("#article").empty();
             $("#article").append(html);
+
+            //Create the Math formulas
+            MathJax.Hub.Typeset();
 
             //Extend the height a few pixels so that all images are shown.
             var ah = $("#article").append("<div id='empty_space' </div>");
