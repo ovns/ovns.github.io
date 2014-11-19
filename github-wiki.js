@@ -1,5 +1,5 @@
 //The name of the page in github
-var github_page = "ryaki-org"
+var github_page = "ovns"
 
 
 //Find the title of the article to be shown
@@ -7,7 +7,7 @@ var title;
 if (document.URL.match("=")) {
     title = document.URL.split("=")[1];
 } else {
-    title = "Ryaki";
+    title = "home";
 }
 
 //transforms double brackets links into markdown links

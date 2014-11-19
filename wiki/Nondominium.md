@@ -1,5 +1,3 @@
-Nondominium
-===========
 
 The Nondominium framework is a property regime that allows participants to pool
 resources by transferring ownership of their contributions to a Custodian in return for rights
