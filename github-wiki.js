@@ -49,7 +49,14 @@ function load_article(title) {
             $("a").on("click", function(e) {
                 var link = $(e.target).attr("href");
                 if (link[0] == "/" && link[1] != "/" && link.match(".html") == null) {
-                    window.location.href = "/wiki.html?article=" + link.substring(6, link.length - 3);
+                    switch (e.which) {
+                        case 1:
+                            window.location.href = "/wiki.html?article=" + link.substring(6, link.length - 3);
+                            break;
+                        case 2:
+                            window.open("/wiki.html?article=" + link.substring(6, link.length - 3));
+                            break;
+                    }
                     return false;
                 }
             });
