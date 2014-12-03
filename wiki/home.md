@@ -11,9 +11,23 @@ This is a repository of documents that are usefull to communities that want to r
 * [Contribution Acknowledgement and Agreement](https://docs.google.com/document/d/1Husqozad7wLzES5UG-Rfd5oDzJvXzG8RjEzUuv2KxTg/pub) The investor agreement that sensoricans use for cash contributions.
 * [Business Model](https://docs.google.com/document/d/1pMlMrtKuG4uajEbNdt_i1uex3xHOKYNSPi9od1E671E/edit?pli=1) Provides an explanation of the exchange firm.
 
+## Metamaps
+* [Metamaps](//metamaps.cc)
+* [Legal documents](http://www.docracy.com/doc/showalluserdocs?sortBy=5&page=1&userId=7366)
+
+## Loomio/Enspiral
+
+* [loomio](//loomio.org)
+
+## Mikorizal
+
+* [mikorizal](//mikorizal.org) site.
+* [valnet](//github.com/valnet), their software.
+
 ## Ryaki
 
 * [Ryaki webpage](http://ryaki-org.github.io) Provides a description of an exchange network between "communities". It introduces the notion of an investment unit accompanied by an investment equation seperate from a value equation.
+
 
 ## Wiki 
 
