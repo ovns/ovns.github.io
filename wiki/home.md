@@ -10,6 +10,7 @@ This is a repository of documents that are usefull to communities that want to r
 * [Custodian agreement](https://docs.google.com/document/d/1l422fkADzWjNZkNZ91uGvB6OHAjpZt9Qmlcs_SL5YRQ/pub)
 * [Contribution Acknowledgement and Agreement](https://docs.google.com/document/d/1Husqozad7wLzES5UG-Rfd5oDzJvXzG8RjEzUuv2KxTg/pub) The investor agreement that sensoricans use for cash contributions.
 * [Business Model](https://docs.google.com/document/d/1pMlMrtKuG4uajEbNdt_i1uex3xHOKYNSPi9od1E671E/edit?pli=1) Provides an explanation of the exchange firm.
+* [Investment agreement for a 3d printer](https://docs.google.com/document/d/1U5NTRUHna6vYnv6riKyUrl8Xn8kn2K7ShrzaBy_ZyUM/edit?pli=1) It contains information about the first investment based on the hybrid model of ownership. 
 
 ## Metamaps
 * [Metamaps](//metamaps.cc)
